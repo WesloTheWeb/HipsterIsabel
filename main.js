@@ -24,9 +24,14 @@ client.on('messageCreate', (message) => {
     message.channel.send('pong!')
   }
 
-  if (message.content.startsWith('virgos')) {
-    message.channel.send(`Yass -- I'm a virgo bitch!`)
+  if (message.content.includes('virgos') || (message.content.includes('Virgos'))) {
+    message.channel.send(`Yass -- I'm a Virgo bitch!`)
   }
+
+  if (message.content === 'men' || message.content === 'Men') {
+    message.channel.send(`Can we just like end the patriarchy already?`)
+  }
+  
 });
 
 client.login(process.env.TOKEN)
