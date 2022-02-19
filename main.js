@@ -22,15 +22,19 @@ client.on("ready", () => {
 client.on('messageCreate', (message) => {
   if (message.content.startsWith('ping')) {
     message.channel.send('pong!')
-  }
+  };
 
   if (message.content.includes('virgos') || (message.content.includes('Virgos'))) {
     message.channel.send(`Yass -- I'm a Virgo bitch!`)
-  }
+  };
+
+  if (message.content.startsWith('Scarlettabelle?')) {
+    message.channel.send(`Umm.. It's Isabel, but thanks.`)
+  };
 
   if (message.content === 'men' || message.content === 'Men') {
     message.channel.send(`Can we just like end the patriarchy already?`)
-  }
+  };
   
 });
 
